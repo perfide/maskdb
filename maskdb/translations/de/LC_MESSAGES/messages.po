@@ -1,0 +1,145 @@
+# German translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: maskdb.perfide@safersignup.de\n"
+"POT-Creation-Date: 2020-12-13 12:36+0100\n"
+"PO-Revision-Date: 2020-12-11 00:00+0100\n"
+"Last-Translator: P. H. <maskdb.perfide@safersignup.de>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: debug.py:29
+#, python-format
+msgid "The address \"%(host)s:%(port)s\" is already in use"
+msgstr "Die Adresse \"%(host)s:%(port)s\" wird schon benutzt"
+
+#: build/lib/maskdb/forms.py:39 maskdb/forms.py:39
+msgid "Names too short"
+msgstr "Name zu kurz"
+
+#: build/lib/maskdb/forms.py:41 maskdb/forms.py:41
+msgid "Names should start uppercase"
+msgstr "Naben sollten mit Großbuchstaben starten"
+
+#: build/lib/maskdb/forms.py:43 maskdb/forms.py:43
+msgid "The second letter should be lowercase"
+msgstr "Der zweite Buchstabe sollte kleingeschrieben werden"
+
+#: build/lib/maskdb/forms.py:61 maskdb/forms.py:61
+#, python-format
+msgid "Please use the \"%(date_format)s\" format!"
+msgstr "Bitte nutze das \"%(date_format)s\" Format!"
+
+#: build/lib/maskdb/forms.py:72 maskdb/forms.py:72
+#: maskdb/templates/table.html:4
+msgid "First name"
+msgstr "Vorname"
+
+#: build/lib/maskdb/forms.py:73 maskdb/forms.py:73
+#: maskdb/templates/table.html:5
+msgid "Surname"
+msgstr "Nachname"
+
+#: build/lib/maskdb/forms.py:74 maskdb/forms.py:74
+#: maskdb/templates/table.html:6
+msgid "Birthday"
+msgstr "Geburtstag"
+
+#: build/lib/maskdb/forms.py:75 maskdb/forms.py:75
+#: maskdb/templates/table.html:7
+msgid "Added by"
+msgstr "Hinzugefügt von"
+
+#: build/lib/maskdb/forms.py:76 build/lib/maskdb/views.py:154
+#: build/lib/maskdb/views.py:165 maskdb/forms.py:76
+#: maskdb/templates/base.html:8 maskdb/templates/index.html:3
+#: maskdb/views.py:154 maskdb/views.py:165
+msgid "Search"
+msgstr "Suche"
+
+#: build/lib/maskdb/forms.py:77 maskdb/forms.py:77
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: build/lib/maskdb/views.py:91 maskdb/views.py:91
+#, python-format
+msgid "Database search failed: %(error)s"
+msgstr "Datenbanksuche fehlgeschlagen: %(error)s"
+
+#: build/lib/maskdb/views.py:98 maskdb/views.py:98
+msgid "Add first name"
+msgstr "Füge Vornamen hinzu"
+
+#: build/lib/maskdb/views.py:101 maskdb/views.py:101
+msgid "Add surname"
+msgstr "Füge Nachnamen hinzu"
+
+#: build/lib/maskdb/views.py:104 maskdb/views.py:104
+msgid "Add birthday"
+msgstr "Füge Geburtsdatum hinzu"
+
+#: build/lib/maskdb/views.py:107 maskdb/views.py:107
+msgid "Add your name"
+msgstr "Füge deinen Namen ein"
+
+#: build/lib/maskdb/views.py:122 maskdb/views.py:122
+#, python-format
+msgid "Customer %(first_name)s %(surname)s already exists"
+msgstr "Kunde %(first_name)s %(surname)s existiert bereits"
+
+#: build/lib/maskdb/views.py:129 maskdb/views.py:129
+#, python-format
+msgid "Database rejected request: %(error)s"
+msgstr "Datanbank verweigert Befehl: %(error)s"
+
+#: build/lib/maskdb/views.py:131 maskdb/views.py:131
+#, python-format
+msgid "Database add failed: %(error)s"
+msgstr "Datenbank-hinzufügen fehlgeschlagen: %(error)s"
+
+#: build/lib/maskdb/views.py:134 maskdb/views.py:134
+#, python-format
+msgid "Added %(first_name)s %(surname)s"
+msgstr "Es wurde %(first_name)s %(surname)s hinzugefügt"
+
+#: build/lib/maskdb/views.py:147 build/lib/maskdb/views.py:177
+#: maskdb/views.py:147 maskdb/views.py:177
+msgid "default-lang"
+msgstr "de"
+
+#: build/lib/maskdb/views.py:183 maskdb/views.py:183
+#, python-format
+msgid "Database listing failed: %(error)s"
+msgstr "Datenbank-auflisten fehlgeschlagen: %(error)s"
+
+#: build/lib/maskdb/views.py:186 maskdb/templates/base.html:9
+#: maskdb/views.py:186
+msgid "List"
+msgstr "Liste"
+
+#: maskdb/templates/base.html:3 maskdb/templates/base.html:7
+msgid "MaskDB"
+msgstr "MaskenDB"
+
+#: maskdb/templates/index.html:44
+msgid "Found no hits!"
+msgstr "Keine Treffer gefunden!"
+
+#: maskdb/templates/table.html:1
+#, python-format
+msgid "Found %(count)s customers:"
+msgstr "Es wurden %(count)s Kunden gefunden:"
+
+#: maskdb/templates/table.html:8
+msgid "Added at"
+msgstr "Hinzugefügt um"
