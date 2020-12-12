@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{ title }} - {{ _('MaskDB') }}</title>
+    </head>
+    <body>
+        <div>
+            {{ _('MaskDB') }}:
+            <a href="{{ url_for('route_index') }}">{{ _('Search') }}</a>
+            <a href="{{ url_for('route_list') }}">{{ _('List') }}</a>
+        </div>
+        <hr />
+        {%- macro content_macro() %}{% block content %}{% endblock %}{% endmacro %}
+        {{- content_macro()|indent(8) }}
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<h1>{{ _('Found %(count)s customers:', count=count) }}</h1>
+<table style="width:100%">
+  <tr align="left">
+    <th>{{ _('First name') }}</th>
+    <th>{{ _('Surname') }}</th>
+    <th>{{ _('Birthday') }}</th>
+    <th>{{ _('Added by') }}</th>
+    <th>{{ _('Added at') }}</th>
+  </tr>
+  {%- for customer in customers %}
+  <tr>
+    <td>{{ customer.first_name }}</td>
+    <td>{{ customer.surname }}</td>
+    <td>{{ customer.birthday }}</td>
+    <td>{{ customer.added_by }}</td>
+    <td>{{ customer.added_at }}</td>
+  </tr>
+  {%- endfor %}
+</table>

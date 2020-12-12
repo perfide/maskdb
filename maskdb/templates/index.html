@@ -1,0 +1,47 @@
+{%- extends "base.html" %}
+{%- block content %}
+    <h1>{{ _('Search') }}</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.first_name.label }}<br>
+            {{ form.first_name(size=64) }}<br>
+            {% for error in form.first_name.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.surname.label }}<br>
+            {{ form.surname(size=64) }}<br>
+            {% for error in form.surname.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.birthday.label }}<br>
+            {{ form.birthday(size=10) }}<br>
+            {% for error in form.birthday.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.added_by.label }}<br>
+            {{ form.added_by(size=64) }}<br>
+            {% for error in form.added_by.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.search() }}
+            {{ form.add() }}
+        </p>
+    </form>
+    {%- include 'flashed_messages.html' %}
+    {%- if is_search %}
+    {%- if customers %}
+    {%- include 'table.html' %}
+    {%- else %}
+    <h1>{{ _('Found no hits!', count=count) }}</h1>
+    {%- endif %}
+    {%- endif %}
+{%- endblock %}
