@@ -1,0 +1,8 @@
+/build/
+/customer.sqlite
+/maskdb/__pycache__/
+/maskdb/translations/de/LC_MESSAGES/messages.mo
+/maskdb.egg-info/
+/messages.pot
+/__pycache__/
+/.venv/
