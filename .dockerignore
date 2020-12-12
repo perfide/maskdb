@@ -3,6 +3,7 @@
 /CONTRIBUTING.md
 /customer.sqlite
 /debug.py
+/dist/
 /docker-compose.yaml
 /Dockerfile
 /.dockerignore

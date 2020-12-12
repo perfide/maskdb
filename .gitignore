@@ -1,5 +1,6 @@
 /build/
 /customer.sqlite
+/dist/
 /maskdb/__pycache__/
 /maskdb/translations/de/LC_MESSAGES/messages.mo
 /maskdb.egg-info/
