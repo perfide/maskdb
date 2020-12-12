@@ -1,0 +1,13 @@
+---
+
+version: '3.5'
+
+services:
+  gunicorn:
+    build: .
+    volumes:
+    - ./customer.sqlite:/app/customer.sqlite
+    ports:
+    - 5000:5000
+
+...
