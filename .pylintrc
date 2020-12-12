@@ -1,0 +1,13 @@
+[MASTER]
+
+init-hook='import sys; sys.path.append("./.venv/lib/python3.7/site-packages/")
+
+[MESSAGES CONTROL]
+
+# """C0330: Wrong hanging indentation before block (add 4 spaces)."""
+# yapf (and back) are reformatting code in a good way (PEP-8 compatible)
+# It is just pylint which does not like the result.
+
+disable=C0330
+
+# [EOF]
